@@ -86,7 +86,10 @@ urls = (
 	'/zip/(.*)', 'ZipHandler',
 	'/unzip/(.*)', 'UnzipHandler',
 )
-app = web.application(urls, globals())
 
 if __name__ == "__main__":
+	app = web.application(urls, globals())
 	app.run()
+else:
+	app = web.application(urls, globals(), autoreload=False)
+	application = app.wsgifunc()
