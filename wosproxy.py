@@ -42,7 +42,15 @@ def get_wos_file(wos_path):
 
 class MainHandler:
 	def GET(self):
-		return 'Hello world!'
+		return """
+			I am a proxy to the World Of Spectrum archive: ftp://ftp.worldofspectrum.org/pub/sinclair/
+
+			Files can be downloaded from the following endpoints:
+			/zip/games/a/Arkanoid-RevengeOfDoh.tzx.zip - zipped
+			/unzip/games/a/Arkanoid-RevengeOfDoh.tzx.zip - unzipped
+
+			Please be nice, or Martijn's anti-abuse scripts will cut this service off...
+		"""
 
 
 class UnzipHandler:
