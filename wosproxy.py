@@ -42,6 +42,7 @@ def get_wos_file(wos_path):
 
 class MainHandler:
 	def GET(self):
+		web.header("Content-Type", "text/plain")
 		return """
 			I am a proxy to the World Of Spectrum archive: ftp://ftp.worldofspectrum.org/pub/sinclair/
 
