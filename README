@@ -1,8 +1,9 @@
 wosproxy
 
 An HTTP proxy to (selected parts of) the World Of Spectrum archive
-<ftp://ftp.worldofspectrum.org/sinclair/>, for clients that can't support FTP,
-won't allow it according to security rules, or can't unzip files by themselves.
+<ftp://ftp.worldofspectrum.org/pub/sinclair/>, for clients that can't support
+FTP, won't allow it according to security rules, or can't unzip files by
+themselves.
 
 Files can be requested zipped or unzipped - in the latter case, the first file
 in the archive will be returned.
@@ -10,7 +11,7 @@ in the archive will be returned.
 http://wosproxy/zip/path/to/file.tzx.zip
 http://wosproxy/unzip/path/to/file.tzx.zip
 
-where path/to/file.tzx.zip is a path relative to the /sinclair/ directory.
+where path/to/file.tzx.zip is a path relative to the /pub/sinclair/ directory.
 
 Responses include the header
 Access-Control-Allow-Origin: *
