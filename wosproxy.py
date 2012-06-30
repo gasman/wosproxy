@@ -9,7 +9,7 @@ import StringIO
 WOS_ROOT = 'ftp://ftp.worldofspectrum.org/pub/sinclair/'
 #WOS_ROOT = 'http://localhost/~matthew/fakewos/'
 ALLOWED_PATHS = [
-	'compilations/'
+	'compilations/',
 	'demos/',
 	'games/',
 	'misc/',
